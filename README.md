@@ -7,12 +7,12 @@
 
 ## **References**
 Credits to all these amazing sources i used for this assignment.
-#### 1) DNA
+#### 1) DNA Sequence, K mers, Complement
 - [Professor Hendrix](https://www.youtube.com/@ProfessorHendrix)
 - [Bioinformatics with Ease](https://www.youtube.com/@bioinformaticswithease2904)
 - [Stack Overflow](https://stackoverflow.com/questions/25188968/reverse-complement-of-dna-strand-using-python)
 - [FreeCodeCamp](https://www.freecodecamp.org/news/bento-grids-in-web-design/)
-#### 2) Interface Alarm System (IAS)
+#### 2) Error Handling - Interface Alarm System (IAS)
 - [W3Schools](http://www.w3schools.com/python/)
 - [Pynative](https://pynative.com/python-convert-decimal-number-to-binary-and-vice-versa/)
 #### 3) Mission to Mars
@@ -24,6 +24,7 @@ Credits to all these amazing sources i used for this assignment.
 
 > Muhammad Affriza Ayman Nashmi </br>
 Teknologi Informasi
+
 
 
 
