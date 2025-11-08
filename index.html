@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission to Mars</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..1200;1,100..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sixtyfour:BLED,SCAN@21,-41&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+    <style>
+        /* global style */
+        :root {
+            background: linear-gradient(to top, #12192a 0%, #0c0f1b 40%, #04060e 90%);
+            --box-color-1: #19263360;
+            --text-color: #d7d7d7;
+            --accent-color: #ff9900;
+            --font-content: 'JetBrains Mono', monospace;
+            --font-header: 'SIxtyfour', monospace;
+            --font-extra:'Space Mono', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-content);
+            font-weight: var(--weight-content);
+            font-size: medium;
+            text-align: left;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            padding: 20px;
+
+        }
+
+
+        h1 {
+            font-family: var(--font-header);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px; 
+            color: var(--accent-color)
+        }
+        
+        .box h2 {
+            font-family: var(--font-extra);
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: var(--accent-color);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h3 {font-size: larger; text-align: center;}
+        ol {padding-left: 25px;}
+        a:link {color: #ffd325;}
+        img {display: block; margin: auto; margin-bottom: 10px; max-width: 100%; height: auto;}
+        .suhu {text-align: center; color: #ffffff; font-size: x-large; font-weight: bolder;}
+        .time {text-align: center; margin-top: 10px;}
+        .tengah {text-align: center;}
+        .desc {text-align: justify;}
+        footer {margin-top: 30px; text-align: center;}
+        
+        .typewriter h3 {
+            overflow: hidden;
+            min-width: 1px;
+            white-space: nowrap;
+            margin: auto;
+            letter-spacing: .15em;
+            animation: 
+            typing 6s steps(52, end) forwards, 
+            blink-caret .7s step-end;
+        }
+
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+        from, to { border-color: transparent }
+        }
+
+        /*box styling*/
+        .box {
+            background-color: var(--box-color-1);
+            color: var(--text-color);
+            border-radius: 10px; 
+            padding: 12px; 
+            box-shadow: 0 0px 3px rgba(141, 138, 138, 0.7);
+            transition: transform 0.1s;
+        }
+
+        .box:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0px 6px rgba(255, 255, 255, 0.4);
+        }
+        
+       /*mobile responsive*/
+        .grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 20px; 
+            max-width: 900px; 
+            margin: 0 auto;
+        }
+
+        /* desktop layout*/
+        @media (min-width: 768px) {
+            .grid {
+                max-width: 1200px;
+                grid-template-columns: repeat(5, 1fr);
+                grid-auto-rows: minmax(80px, auto); 
+                gap: 12px;
+            }
+
+        /* box placements */
+            .box-0 {grid-column: 1; grid-row: 1 /span 2;}
+            .box-1 {grid-column: 2 / span 3; grid-row: 1;}
+            .box-2 {grid-column: 5; grid-row: 1 / span 3;}
+            .box-3 {grid-column: 1; grid-row: 3;}
+            .box-4 {grid-column: 2 / span 3; grid-row: 2 / span 2;}
+            .box-5 {grid-column: 1; grid-row: 4;}
+            .box-6 {grid-column: 2 / span 2; grid-row: 4;}
+            .box-7 {grid-column: 4 /span 2; grid-row: 4;}
+        }
+    </style>
+</head>
+
+<body>
+    <main class="grid">
+        <section class="box box-1">
+            <h1>MISSION TO MARS</h1>
+            <div class = "typewriter">
+                <h3>Welcome aboard, Captain.</h3>
+            </div>
+        </section>
+
+        <article class="box box-4">
+            <h2>MISSION STATUS: TRANSIT</h2>
+            <H3>ALL SYSTEMS: GO</H3>
+            <h3>MISSION OBJECTIVE: MARS ORBIT INSERTION</h3>
+        </br>
+            <h3>Description</h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        </br>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        </article>
+
+        <section class="box box-0">
+            <h2>CREW STATUS</h2>
+            <p>Total:<br>5 Crews</p>
+            <ol>
+                <li>Elon Musk - Pilot<br>Status: Fit</li>
+                <li>Muhammad Ibnu - Admin<br>Status: Fit</li>
+                <li>Steve Jobs - HMI<br>Status: Fit</li>
+                <li>Tyler Durden - Security<br>Status: Fit</li>
+                <li>Walter White - Chemist<br>Status: Fit</li>
+            </ol>
+        </section>
+
+        <section class="box box-3">
+            <h2>TELEMETRY</h2>
+            <p>Speed: 16,000 km/h</p>
+            <p>Altitude: 67,676,767 km</p>
+            <p>Propellant mass: 100%</p>
+            <p>Attitude Control: Stable</p>
+            </section>
+
+        <section class="box box-5">
+            <h2>TEMPERATURE</h2>
+            <p class="suhu">-67°C / -88.6°F<p>
+            <p class="tengah">Humidity Level: 43%</p>
+        </section>
+
+        <section class="box box-6">
+            <h2>MISSION TIME</h2>
+            <p class="time">CONTROL TIME (GMT)</p>
+            <p class="suhu">21 : 20 : 19</p>
+            <p class="time">ELAPSED TIME (MET)</p>
+            <p class="suhu">67 : 06 : 07 : 00</p>
+        </section>
+                
+        <section class="box box-2">
+            <h2>ASSET: PERSERVERANCE ROVER</h2>
+            <img class ="image img" src="https://d2pn8kiwq2w21t.cloudfront.net/original_images/24804_1-PIA23764-RoverNamePlateonMars-web_CiPm7xe.jpg"width="300"height="190">
+            <p class="tengah"> Mars Local Time:<br>Sol: 1670</p> <br>
+            <p class="tengah"> Location:<br>Jezero Crater</p> <br>
+            <p class="tengah">Last Telemetry Received :<br>14.40 GMT+7</p> <br>
+            </p>
+        </section>
+
+        <section class="box box-7">
+            <h2>NAVIGATION CAM</h2>
+            <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Jezero_crater_on_Mars%2C_sol_14_of_Perseverance_mission.png/1200px-Jezero_crater_on_Mars%2C_sol_14_of_Perseverance_mission.png">
+        </section>
+    </main>
+</body>
+<footer>
+    <p class="footer">
+    &copy; Mbantul Aerospace Agency, 2025</p>
+</footer>
+</html>
+
+<!-- References :
+HTML, CSS, AND BENTO GRID TUTORIAL:
+https://www.w3schools.com/  - All the syntax
+https://css-tricks.com/almanac/properties/  - CSS cheatsheet
+
+DESIGN IDEAS:
+https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff
+https://github.com/Kushhhhhhhh/Bentolio
+https://www.reddit.com/r/webdev/
+
+IMAGE & CONTENT:
+https://science.nasa.gov/planetary-science/programs/mars-exploration/
+https://science.nasa.gov/mission/mars-2020-perseverance/science-updates/
+
+HELP WITH ISSUES:
+https://stackoverflow.com/questions/68478893/mobile-responsive-css-not-centered-on-iphone
+https://www.reddit.com/r/css/
+-->
