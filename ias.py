@@ -9,7 +9,7 @@ def ias():
     
     x = int(num)
     if x > 31:
-        print("!!--Undetected errors--!!")
+        print("!!--Unknown errors--!!")
         return
     
     binary = format(x, '5b')
@@ -29,3 +29,4 @@ ias()
 # References:
 # https://www.w3schools.com/python/default.asp
 # https://pynative.com/python-convert-decimal-number-to-binary-and-vice-versa/
+
